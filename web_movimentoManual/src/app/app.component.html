@@ -1,0 +1,99 @@
+<div class="container">
+  
+  <div class="row">
+    <div class="col">
+      <h1>Movimento Manual</h1>
+    </div>
+
+    <form [formGroup]="movimentoForm">
+
+      <div class="row">
+        <div class="col">
+          <label class="form-label" for="mes">Mês: </label>
+          <input class="form-control" id="mes" type="text" formControlName="mes" >
+        </div>
+        <div class="col">
+          <label class="form-label" for="ano">Ano: </label>
+          <input class="form-control"id="ano" type="text" formControlName="ano">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <label class="form-label" for="produto">Produto: </label>
+          <select class="form-select" (change)="getProdutoCosif($event)" formControlName="produto">
+            <option selected>-- Selecione --</option>
+            <option *ngFor="let produto of produtos">{{produto.coD_PRODUTO}}</option>
+          </select>
+        </div>
+        <div class="col">
+          <label class="form-label" for="cosif">Cosif: </label>
+          <select class="form-select" formControlName="cosif">
+            <option selected>-- Selecione --</option>
+            <option *ngFor="let cosif of cosifs">{{cosif.coD_COSIF}}</option>
+          </select>
+          
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6">
+          <label class="form-label" for="valor">Valor: </label>
+          <input class="form-control" id="valor" type="text" formControlName="valor">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6">
+          <label class="form-label" for="descricao">Descrição: </label>
+          <textarea class="form-control" id="descricao" type="text" formControlName="descricao"></textarea>
+        </div>
+      </div>
+    </form>
+
+    <div class="row " style="margin-top: 10px;">
+      <div class="col-6 d-flex justify-content-end">
+        <div class="col-2" style="margin-right:5px">
+          <button class="btn btn-warning " style="width: 100%;" (click)="movimentoForm.reset()">Limpar</button>
+        </div>
+        <div class="col-2" style="margin-right:5px">
+          <button class="btn btn-primary" style="width: 100%" (click)="newMovimento()">Novo</button>
+        </div>
+        <div class="col-2">
+          <button class="btn btn-primary" style="width: 100%" (click)="createMovimentoManual()">Incluir</button>
+        </div>
+      </div>
+    </div>
+      
+    
+    
+
+      <div class="row" style="margin-top: 100px;">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Mês</th>
+              <th scope="col">Ano</th>
+              <th scope="col">Codigo do produto</th>
+              <th scope="col">Descrição do Produto</th>
+              <th scope="col">NR Lançamento</th>
+              <th scope="col">Descrição</th>
+              <th scope="col">Valor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let movimento of movimentos">
+              <td>{{movimento.daT_MES}}</td>
+              <td>{{movimento.daT_ANO}}</td>
+              <td>{{movimento.coD_PRODUTO}}</td>
+              <td>DESCRICAO PRODUTO</td>              
+              <td>{{movimento.nuM_LANCAMENTO}}</td>
+              <td>{{movimento.deS_DESCRICAO}}</td>
+              <td>{{movimento.vaL_VALOR}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+</div>
