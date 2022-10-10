@@ -6683,11 +6683,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\_Projects\\Exame\\api_movimentoManual\\api_movimentoManual.csproj",
+      "projectUniqueName": "C:\\_Projects\\Exame\\teste\\Exame_.Net\\api_movimentoManual\\api_movimentoManual.csproj",
       "projectName": "api_movimentoManual",
-      "projectPath": "C:\\_Projects\\Exame\\api_movimentoManual\\api_movimentoManual.csproj",
+      "projectPath": "C:\\_Projects\\Exame\\teste\\Exame_.Net\\api_movimentoManual\\api_movimentoManual.csproj",
       "packagesPath": "C:\\Users\\Lucas Gasbarro\\.nuget\\packages\\",
-      "outputPath": "C:\\_Projects\\Exame\\api_movimentoManual\\obj\\",
+      "outputPath": "C:\\_Projects\\Exame\\teste\\Exame_.Net\\api_movimentoManual\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Lucas Gasbarro\\AppData\\Roaming\\NuGet\\NuGet.Config",

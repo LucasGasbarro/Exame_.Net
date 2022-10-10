@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "m+U5umHfDXp/vtiHBgvLD34QqucKxS0v+nB8hvrAefBE3nL3zEY8dDTgHv8USFI42AgqMTCYkd8ay7FgcB7aXg==",
+  "dgSpecHash": "7WMdZbIQ6WvvVmx6jJczeSZifIbHwVNuKzH+VMK6EUaTb62ZD0j6hIY83PS3FulSgM9+0r6tCTAbIwvDqgn2mg==",
   "success": true,
-  "projectFilePath": "C:\\_Projects\\Exame\\api_movimentoManual\\api_movimentoManual.csproj",
+  "projectFilePath": "C:\\_Projects\\Exame\\teste\\Exame_.Net\\api_movimentoManual\\api_movimentoManual.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lucas Gasbarro\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Lucas Gasbarro\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.9\\microsoft.aspnet.webapi.client.5.2.9.nupkg.sha512",

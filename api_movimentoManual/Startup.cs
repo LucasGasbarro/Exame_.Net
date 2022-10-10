@@ -1,4 +1,8 @@
 using api_movimentoManual.Data;
+using api_movimentoManual.Repository;
+using api_movimentoManual.Repository.Interface;
+using api_movimentoManual.Service;
+using api_movimentoManual.Service.Interface;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -16,6 +20,13 @@ namespace api_movimentoManual
             services.AddControllers();
             services.AddDbContext<AppDbContext>();
             services.AddCors();
+            services.AddTransient<IMovimentoManualService, MovimentoManualService>();
+            services.AddTransient<IMovimentoManualRepository, MovimentoManualRepository>();
+            services.AddTransient<IProdutoService, ProdutoService>();
+            services.AddTransient<IProdutoRepository, ProdutoRepository>();
+            services.AddTransient<IProdutoCosifService, ProdutoCosifService>();
+            services.AddTransient<IProdutoCosifRepository, ProdutoCosifRepository>();
+
 
             // Default Policy
             services.AddCors(options =>

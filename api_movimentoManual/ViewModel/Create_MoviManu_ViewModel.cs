@@ -39,28 +39,5 @@ namespace api_movimentoManual.ViewModel
         [Range(0.00, 999999999999999999.99,ErrorMessage ="O valor deve conter no máximo 18 caracteres.")]
         [RegularExpression(@"^\d+.\d{0,2}$", ErrorMessage = "O valor deve conter no máximo duas casas decimais.")]
         public decimal VAL_VALOR { get; set; }
-
-        public int Get_NumLancamento(int mes, int ano)
-        {
-            int output = 0;
-
-            try
-            {
-                using (var context = new AppDbContext())
-                {
-                    var query = from mm in context.MOVIMENTO_MANUAL
-                                where mm.DAT_MES == mes && mm.DAT_ANO == ano
-                                select mm.NUM_LANCAMENTO;
-
-                    output = query.Count() + 1;
-                }
-            }
-            catch (Exception)
-            {
-                throw;
-            }
-            
-            return output;
-        }
     }
 }
