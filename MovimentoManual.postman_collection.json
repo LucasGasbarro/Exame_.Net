@@ -27,27 +27,6 @@
 						}
 					},
 					"response": []
-				},
-				{
-					"name": "GetById",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "https://localhost:5001/v1/produto/PR01",
-							"protocol": "https",
-							"host": [
-								"localhost"
-							],
-							"port": "5001",
-							"path": [
-								"v1",
-								"produto",
-								"PR01"
-							]
-						}
-					},
-					"response": []
 				}
 			]
 		},
@@ -75,33 +54,12 @@
 					"response": []
 				},
 				{
-					"name": "GetById",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "https://localhost:5001/v1/produtocosif/PRDCOS001",
-							"protocol": "https",
-							"host": [
-								"localhost"
-							],
-							"port": "5001",
-							"path": [
-								"v1",
-								"produtocosif",
-								"PRDCOS001"
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "GetByProdutoIdAsync",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://localhost:5001/v1/produtocosif/PRDCOS001",
+							"raw": "https://localhost:5001/v1/produtocosif/Produto/PR02",
 							"protocol": "https",
 							"host": [
 								"localhost"
@@ -110,7 +68,8 @@
 							"path": [
 								"v1",
 								"produtocosif",
-								"PRDCOS001"
+								"Produto",
+								"PR02"
 							]
 						}
 					},
@@ -148,7 +107,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"DAT_MES\": 10,\r\n    \"DAT_ANO\": 2022,\r\n    \"NUM_LANCAMENTO\": 4,\r\n    \"COD_PRODUTO\": \"PR01\",\r\n    \"COD_COSIF\": \"PRDCOS001\",\r\n    \"DES_DESCRICAO\": \"Teste Dev\",\r\n    \"COD_USUARIO\": \"TESTE\",\r\n    \"VAL_VALOR\": 10.99\r\n}",
+							"raw": "{\r\n    \"DAT_MES\": 11,\r\n    \"DAT_ANO\": 2022,\r\n    \"COD_PRODUTO\": \"PR01\",\r\n    \"COD_COSIF\": \"PRDCOS001\",\r\n    \"DES_DESCRICAO\": \"Testei\",\r\n    \"COD_USUARIO\": \"TESTE\",\r\n    \"VAL_VALOR\": 88.98\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
